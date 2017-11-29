@@ -1,0 +1,56 @@
+/* all devices */
+.level_1,
+.level_2 {
+  display: flex;
+}
+
+/* small devices */
+@media (max-width: 600px) {
+  body {
+    /* debug color */
+    background-color: lightgoldenrodyellow;
+  }
+  .level_1,
+  .level_2 {
+    flex-direction: column;
+  }
+}
+
+/* medium devices */
+@media ( min-width:601px) and (max-width: 1000px) {
+  body {
+    /* debug color */
+    background-color: lightcyan;
+  }
+  .level_2 {
+    flex-direction: column;
+  }
+}
+
+/* big devices */
+@media (min-width: 1001px) {
+  body {
+    /* debug color */
+    background-color: lightblue;
+  }
+}
+
+/* debug stuff */
+/* DELETE BEFORE DEPLOY! */
+div {
+  border: 2px solid black;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+div div {
+  border: 2px solid blue;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+div div div {
+  border: 2px solid red;
+  margin: 0.2em;
+  padding: 0.2em;
+}
